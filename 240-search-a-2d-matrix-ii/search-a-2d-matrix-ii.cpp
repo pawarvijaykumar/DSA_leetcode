@@ -16,7 +16,7 @@ public:
             }else if(element<target){
                 //start=mid+1;
                 rowIndex++;
-            }else{
+            }else if(element>target){
                 colIndex--;
             }
            // mid=(start+end)/2;

@@ -1,5 +1,7 @@
 class Solution {
 public:
+
+//used to recursion
    void reverse(int i,int j, vector<char>& s) {
     
     // cout<<str<<endl;
@@ -25,7 +27,7 @@ void reverseString(vector<char>& s) {
 
 
 
-
+//its normaln string
 
 
 //         int start=0;

@@ -4,7 +4,7 @@ public:
     
     // cout<<str<<endl;
  
-       if(i>j){
+       if(i>=j){
        return;
     }
     swap(s[i++],s[j--]);

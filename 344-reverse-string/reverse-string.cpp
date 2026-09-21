@@ -1,16 +1,43 @@
 class Solution {
 public:
-    void reverseString(vector<char>& s) {
-        int start=0;
-        int end=s.size()-1;
-        for(int i=0;i<end;i++){
-            while(start<=end){
-                swap(s[start++],s[end--]);
-                //start++;
-                //end--;
-            }
-        }
-        
-    //return s;
+   void reverse(int i,int j, vector<char>& s) {
+    
+    // cout<<str<<endl;
+ 
+       if(i>j){
+       return;
+    }
+    swap(s[i++],s[j--]);
+    reverse(i,j,s);
+}
+
+
+
+
+void reverseString(vector<char>& s) {
+        reverse(0,s.size()-1,s);
+        //return reverse;
     }
 };
+       
+
+
+
+
+
+
+
+
+//         int start=0;
+//         int end=s.size()-1;
+//         for(int i=0;i<end;i++){
+//             while(start<=end){
+//                 swap(s[start++],s[end--]);
+//                 //start++;
+//                 //end--;
+//             }
+//         }
+        
+//     //return s;
+//     }
+// };
